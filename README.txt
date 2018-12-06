@@ -1,0 +1,16 @@
+Minetest Game mod: Statistic Farming
+==========================
+See license.txt for license information.
+
+Mod with several awards based on statistical data from mod xpfw:
+- Hiker: For walking miles and miles and miles....
+
+Authors of source code
+----------------------
+Originally by ademant (MIT)
+
+Authors of media (textures)
+---------------------------
+Created by ademant (CC BY 3.0):
+	statistic_awards_hiker based on Art by Joel Lee
+	statistic_awards_death based on illustration by Paul Kidby
