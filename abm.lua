@@ -37,6 +37,32 @@ minetest.register_globalstep(function(dtime)
 					end
 				end
 			end
+			local player_swam=xpfw.player_get_attribute(player,"swam")
+			local swam_award=statistic_awards.swimming[1]
+			if player_swam ~= nil then
+				if player_swam > 0 then
+					local swim_i=1
+					local bswim = true
+					local aw_def=statistic_awards.swimming[swim_i]
+					while bswim do
+						local aw_def=statistic_awards.swimming[swim_i]
+						if aw_def ~= nil then
+							if basic_functions.has_value(player_awards.unlocked,aw_def.basename..aw_def.level) == false then
+								bswim=false
+								swam_award=aw_def
+							end
+						else
+							bswim = false
+						end
+						swim_i=swim_i+1
+					end
+					if aw_def ~= nil then
+						if aw_def.threshold<player_swam then
+							awards.unlock(player:get_player_name(),aw_def.basename..aw_def.level)
+						end
+					end
+				end
+			end
 		end
 	end
 end)
