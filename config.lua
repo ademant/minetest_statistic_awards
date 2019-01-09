@@ -1,3 +1,6 @@
+
+
+
 statistic_awards.hiking={
 	{basename="statisticawards_hiking",
 	level=1,

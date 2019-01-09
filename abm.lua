@@ -1,5 +1,5 @@
 
-statistic_awards.globaltimer=0
+statistic_awards.globaltimer=tonumber(minetest.settings:get("statistic_awards.globaltime")) or 1
 
 minetest.register_globalstep(function(dtime)
 	statistic_awards.globaltimer=statistic_awards.globaltimer+dtime
@@ -9,7 +9,6 @@ minetest.register_globalstep(function(dtime)
 		for i=1, #players do
 			local player=players[i]
 			local player_awards=awards.player(player:get_player_name())
---			print(dump2(player_awards))
 			local player_walked=xpfw.player_get_attribute(player,"walked")
 			local hike_award=statistic_awards.hiking[1]
 			if player_walked ~= nil then

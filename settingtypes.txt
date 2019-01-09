@@ -1,1 +1,1 @@
-
+statistic_awards.globaltime (Global time step for checking awards) float 1.5
