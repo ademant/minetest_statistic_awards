@@ -1,18 +1,21 @@
-Minetest Game mod: Statistic Farming
-==========================
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+# Minetest Game mod: Statistic Farming
+
 See license.txt for license information.
 
+## Description
 Mod with several awards based on statistical data from mod xpfw:
 - Hiker: For walking miles and miles and miles....
 - Swimmer: For swimming quite long
 - Crafter: For crafting nice things
+- Death: For dying always and respawning
 
-Authors of source code
-----------------------
+## Authors of source code
+
 Originally by ademant (MIT)
 
-Authors of media (textures)
----------------------------
+## Authors of media (textures)
+
 Created by ademant (CC BY 3.0):
 	statistic_awards_hiker based on Art by Joel Lee
 	statistic_awards_death based on illustration by Paul Kidby
